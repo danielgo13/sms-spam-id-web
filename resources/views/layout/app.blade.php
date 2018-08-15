@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ESPRE | English SMS Spam Prediction</title>
+  <title>ISPRE | Indonesia SMS Spam Prediction</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="/ML/css/bootstrap.min.css" rel="stylesheet" type="text/css">
