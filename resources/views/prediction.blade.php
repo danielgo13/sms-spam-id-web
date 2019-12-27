@@ -86,8 +86,23 @@
                         success:function(data){
                           console.log(data);
                           var dataTemp=data['message'];
-                          $('#predictData').append(dataTemp);
-                          $('#predictDataRes').val(dataTemp);
+                          let a = dataTemp
+                          a = Number(JSON.parse(a).join(';'))
+                          switch (a) {
+                            case 0:
+                              a = "SMS Normal"
+                              break;
+                            case 1:
+                              a = "Penipuan"
+                              break;
+                            case 2:
+                              a = "Promo"
+                              break;
+                            default:
+                              a = "Unrecognized"
+                          }
+                          $('#predictData').append(a);
+                          $('#predictDataRes').val(a);
                         }
                       });
                     });
